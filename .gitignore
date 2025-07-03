@@ -192,3 +192,25 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+
+# data
+*.csv
+*.parquet
+*/final_data
+*.sqlite
+
+# mlflow
+
+*/127.0.0.1:5000
+mlruns/
+mlartifacts/*
+mlflow-artifacts/*
+mlops_zoom
+
+# keys
+
+*.pem*
+
+# configs (necessário?)
+*.json
