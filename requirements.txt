@@ -1,0 +1,12 @@
+pandas
+numpy
+# json
+requests
+typing
+fastembed
+torch
+transformers
+jupyter
+openai
+dotenv
+google
