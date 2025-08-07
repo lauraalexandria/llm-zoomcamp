@@ -10,3 +10,7 @@ jupyter
 openai
 dotenv
 google
+fastmcp
+langgraph
+langchain_mcp_adapters
+langchain_openai

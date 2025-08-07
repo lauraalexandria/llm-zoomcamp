@@ -1,6 +1,8 @@
 import os
 import google.generativeai as genai
 
+# pip install -q -U google-generativeai
+
 from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env")
 
@@ -12,7 +14,9 @@ genai.configure(api_key=GEMINI_API_KEY)
 #     print(m.name)
 
 model = genai.GenerativeModel("gemini-1.5-flash")
-response = model.generate_content("Escreva uma história em uma frase sobre uma princesa em um mundo de fantasia")
+response = model.generate_content(
+    "Escreva uma história em uma frase sobre uma princesa em um mundo de fantasia"
+)
 print(response.text)
 
 response = model.generate_content(
